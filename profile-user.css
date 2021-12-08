@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+}
+input {
+  width: 5%;
+}
+.center {
+  margin: auto;
+  width: 50%;
+
+  padding: 10px;
+}
+body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+
+}
+
+
+button {
+  border-radius: 10px;
+  border: 3px cornflowerblue;
+  background-color:cornflowerblue;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+
+  
+}
+
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.balance {
+  position: relative;
+  margin-left: 30%;
+ 
+  font-size: 90px;
+}
+.profile-head h5{
+  color: #333;
+}
+.profile-head h6{
+  color: #0062cc;
+}
+.profile-edit-btn{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+.proile-rating{
+  font-size: 12px;
+  color: #818182;
+  margin-top: 5%;
+}
+.proile-rating span{
+  color: #495057;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-head .nav-tabs{
+  margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+  font-weight:600;
+  border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+  border: none;
+  border-bottom:2px solid #0062cc;
+}
+rgin-top: -15%;
+}
+file-tab label{
+  font-weight: 600;
+}
+.profile-tab p{
+  font-weight: 600;
+  color: #0062cc;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 580px;
+  
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
