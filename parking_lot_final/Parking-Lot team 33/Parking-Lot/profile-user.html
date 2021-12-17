@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user-profile</title>
+    <link rel="stylesheet" href="profile-user.css" />
+   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style = "background-image: url(https://media.istockphoto.com/vectors/parking-lot-vector-illustration-isolated-on-white-background-flat-vector-id1127160403?k=20&m=1127160403&s=170667a&w=0&h=HUZPpIJzdqs7Py1T_RAn01p02sSWDqKqvnC-pZe-3i4=);">
+    <class class="container" id="container">
+		<br>
+		<br>
+    
+      <div class="row">
+        <div class="col-md-4">
+          
+        </div>
+        <div class="col-md-6">
+          <div class="profile-head">
+            <!-- <h3>
+              USER NAME
+            </h3> -->
+           
+            <br>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <div class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                  aria-selected="true">User Details</div>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="col-md-2">
+          <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <div style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 35px; font-weight: 400; line-height: 24px; margin-top: -80px; margin-left: 21%;margin-bottom: 15%;">
+              Wallet Balance
+            </div>
+            <h1 class="balance" id="balance"> 350</h1>
+            <br>
+            <br>
+            <button type="button" class="button" id = "modify" style="margin-left:23%; display: inline-flex;">ADD MONEY</button>
+            <br>
+            <br>
+            <button type="button" class="button" id = "book" style="margin-left:23%; background-color: green; display: inline-flex;">Book Slot</button>
+            <br>
+            <br>
+            <button type="button" class="button" id = "log_out" style="margin-left:23%; background-color: red; display: inline-flex;" >Log Out</button>
+        </div>
+        <div class="col-md-8">
+          <div class="tab-content profile-tab" id="myTabContent">
+            
+              <div class="row">
+                <div class="col-md-6">
+                  <label>User Id</label>
+                </div>
+                <div class="col-md-6">
+                  <p id="user_id">22209</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Name</label>
+                </div>
+                <div class="col-md-6">
+                  <p id="name">firstname lastname</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Email</label>
+                </div>
+                <div class="col-md-6">
+                  <p id="email">userprofile@gmail.com</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Car No.</label>
+                </div>
+                <div class="col-md-6">
+                  <p id="car_no">MS 27D 3370</p>
+                </div>
+                <div class="col-md-6">
+                  <h2 ><u><b>Past Bookings</b></u></h2>
+                </div>
+                <div class="col-md-6">
+                  <p ></p>
+                </div>
+
+                <ol id="history">
+                  <li>hi</li>
+                  
+                </ol>
+              </div>
+             
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+ 
+    </div>
+    </div>
+    </class>
+
+    <script src ="profile_user.js"></script>
+
+  </body>
+</html>

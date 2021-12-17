@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_uHWwshEgFKkMNeRFusYwP");
+})();
+</script>
+</head>
+<body>
+    <input type="text" id="toname" placeholder="Enter to name" />
+    <input type="text" id="fromname" placeholder="Enter from name" />
+    <input type="text" id="msg" placeholder="Enter the message" />
+    <button onclick = 'sendmail()'> Send email </button>
+    <script src="email.js"></script>
+</body>
+</html>

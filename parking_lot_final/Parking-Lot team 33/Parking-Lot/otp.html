@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="send">Send</button>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>   
+    <script>
+        document.getElementById("send").onclick=function sendMail(){
+            let otp=Math.random()
+            otp=String(otp)
+            otp=otp[2]+otp[3]+otp[4]+otp[5]
+            localStorage.setItem("otp",otp)
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "parkwithus70@gmail.com",
+    Password : "parking@123",
+    To : localStorage.getItem("email"),
+    From : "parkwithus70@gmail.com",
+    Subject : "OTP",
+    Body : `Your OTP is"  ${otp}`
+}).then(
+  message => alert("OTP Sent to your registered email id")
+);
+}
+    </script>
+</body>
+</html> -->

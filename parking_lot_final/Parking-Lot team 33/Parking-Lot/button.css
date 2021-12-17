@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.base {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 210px;
+  height: 70px;
+  border-radius: 3px;
+  color: #fff;
+  background: #027ad6;
+  font: 700 24px sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+i {
+  width: calc(210px / 30);
+  height: calc(70px / 10);
+}
+
+i:nth-child(n + 1):nth-child(-n + 30):hover ~ .bg {
+  --y: 10%;
+}
+
+i:nth-child(n + 31):nth-child(-n + 60):hover ~ .bg {
+  --y: 20%;
+}
+
+i:nth-child(n + 61):nth-child(-n + 90):hover ~ .bg {
+  --y: 30%;
+}
+
+i:nth-child(n + 91):nth-child(-n + 120):hover ~ .bg {
+  --y: 40%;
+}
+
+i:nth-child(n + 121):nth-child(-n + 150):hover ~ .bg {
+  --y: 50%;
+}
+
+i:nth-child(n + 151):nth-child(-n + 180):hover ~ .bg {
+  --y: 60%;
+}
+
+i:nth-child(n + 181):nth-child(-n + 210):hover ~ .bg {
+  --y: 70%;
+}
+
+i:nth-child(n + 211):nth-child(-n + 240):hover ~ .bg {
+  --y: 80%;
+}
+
+i:nth-child(n + 241):nth-child(-n + 270):hover ~ .bg {
+  --y: 90%;
+}
+
+i:nth-child(n + 271):nth-child(-n + 300):hover ~ .bg {
+  --y: 100%;
+}
+
+i:nth-child(30n + 1):hover ~ .bg {
+  --x: 3.3333333333%;
+}
+
+i:nth-child(30n + 2):hover ~ .bg {
+  --x: 6.6666666667%;
+}
+
+i:nth-child(30n + 3):hover ~ .bg {
+  --x: 10%;
+}
+
+i:nth-child(30n + 4):hover ~ .bg {
+  --x: 13.3333333333%;
+}
+
+i:nth-child(30n + 5):hover ~ .bg {
+  --x: 16.6666666667%;
+}
+
+i:nth-child(30n + 6):hover ~ .bg {
+  --x: 20%;
+}
+
+i:nth-child(30n + 7):hover ~ .bg {
+  --x: 23.3333333333%;
+}
+
+i:nth-child(30n + 8):hover ~ .bg {
+  --x: 26.6666666667%;
+}
+
+i:nth-child(30n + 9):hover ~ .bg {
+  --x: 30%;
+}
+
+i:nth-child(30n + 10):hover ~ .bg {
+  --x: 33.3333333333%;
+}
+
+i:nth-child(30n + 11):hover ~ .bg {
+  --x: 36.6666666667%;
+}
+
+i:nth-child(30n + 12):hover ~ .bg {
+  --x: 40%;
+}
+
+i:nth-child(30n + 13):hover ~ .bg {
+  --x: 43.3333333333%;
+}
+
+i:nth-child(30n + 14):hover ~ .bg {
+  --x: 46.6666666667%;
+}
+
+i:nth-child(30n + 15):hover ~ .bg {
+  --x: 50%;
+}
+
+i:nth-child(30n + 16):hover ~ .bg {
+  --x: 53.3333333333%;
+}
+
+i:nth-child(30n + 17):hover ~ .bg {
+  --x: 56.6666666667%;
+}
+
+i:nth-child(30n + 18):hover ~ .bg {
+  --x: 60%;
+}
+
+i:nth-child(30n + 19):hover ~ .bg {
+  --x: 63.3333333333%;
+}
+
+i:nth-child(30n + 20):hover ~ .bg {
+  --x: 66.6666666667%;
+}
+
+i:nth-child(30n + 21):hover ~ .bg {
+  --x: 70%;
+}
+
+i:nth-child(30n + 22):hover ~ .bg {
+  --x: 73.3333333333%;
+}
+
+i:nth-child(30n + 23):hover ~ .bg {
+  --x: 76.6666666667%;
+}
+
+i:nth-child(30n + 24):hover ~ .bg {
+  --x: 80%;
+}
+
+i:nth-child(30n + 25):hover ~ .bg {
+  --x: 83.3333333333%;
+}
+
+i:nth-child(30n + 26):hover ~ .bg {
+  --x: 86.6666666667%;
+}
+
+i:nth-child(30n + 27):hover ~ .bg {
+  --x: 90%;
+}
+
+i:nth-child(30n + 28):hover ~ .bg {
+  --x: 93.3333333333%;
+}
+
+i:nth-child(30n + 29):hover ~ .bg {
+  --x: 96.6666666667%;
+}
+
+i:nth-child(30n + 30):hover ~ .bg {
+  --x: 100%;
+}
+
+.bg {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / span 30;
+  grid-row: 1 / span 10;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+i:hover ~ .bg {
+  background: radial-gradient(
+    circle 110px at var(--x) var(--y),
+    rgba(169, 242, 136, 0.4),
+    rgba(169, 242, 136, 0)
+  );
+}
